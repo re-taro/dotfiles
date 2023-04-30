@@ -7,5 +7,6 @@
     "editor.fontSize": 14,
     "workbench.colorTheme": "Nord",
     "workbench.startupEditor": "none",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme"
 }
