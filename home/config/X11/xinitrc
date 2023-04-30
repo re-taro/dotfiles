@@ -1,0 +1,64 @@
+#!/usr/bin/env sh
+
+userresource="$XDG_CONFIG_HOME/X11/Xresource"
+[ -f "$userresource" ] && xrdb -merge "$userresource"
+
+export GTK_THEME="Adwaita:dark"
+export QT_STYLE_OVERRIDE="adwaita-dark"
+
+export LC_CTYPE=$LANG
+export LC_NUMERIC=$LANG
+export LC_TIME=$LANG
+export LC_COLLATE=$LANG
+export LC_MONETARY=$LANG
+export LC_MESSAGES=$LANG
+export LC_PAPER=$LANG
+export LC_NAME=$LANG
+export LC_ADDRESS=$LANG
+export LC_TELEPHONE=$LANG
+export LC_MEASUREMENT=$LANG
+export LC_IDENTIFICATION=$LANG
+export LC_ALL=
+
+export XIM="fcitx"
+export XIM_PROGRAM="fcitx"
+export INPUT_METHOD=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export MOZ_X11_EGL=1
+export XDG_SESSION_TYPE=x11
+
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+	for f in /etc/X11/xinit/xinitrc.d/?*.sh; do
+		[ -x "$f" ] && . "$f"
+	done
+	unset f
+fi
+
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK
+
+mkdir -p "$HOME/.cache/X11"
+export USERXSESSION="$HOME/.config/X11/xsession"
+export USERXSESSIONRC="$HOME/.cache/X11/xsessionrc"
+export ALTUSERXSESSION="$HOME/.cache/X11/Xsession"
+export ERRFILE="$HOME/.cache/X11/xsession-errors"
+
+xset -b
+xset dpms 0 0 800
+xset s off
+
+session=${1:-awesome}
+export XDG_SESSION_DESKTOP=$session
+export XDG_CURRENT_DESKTOP=$session
+
+case $session in info
+    awesome)
+        exec awesome
+        ;;
+    *)
+        $1
+        ;;
+esac
