@@ -9,5 +9,7 @@
     "workbench.startupEditor": "none",
     "git.autofetch": true,
     "workbench.iconTheme": "material-icon-theme",
-    "git.confirmSync": false
+    "editor.inlineSuggest.enabled": true,
+    "git.branchSortOrder": "alphabetically",
+    "git.enableCommitSigning": true
 }
