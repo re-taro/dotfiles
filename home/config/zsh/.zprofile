@@ -54,7 +54,6 @@ fi
 path=(
   $XDG_BIN_HOME(N-/)
   $CARGO_HOME/bin(N-/)
-  $HOME/.deno/bin(N-/)
   $GOBIN(N-/)
   $path
 )

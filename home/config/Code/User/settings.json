@@ -1,15 +1,21 @@
 {
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'monospace', monospace",
-    "files.autoSave": "onFocusChange",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "workbench.colorTheme": "Nord",
-    "workbench.startupEditor": "none",
-    "git.autofetch": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.inlineSuggest.enabled": true,
-    "git.branchSortOrder": "alphabetically",
-    "git.enableCommitSigning": true
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'monospace', monospace",
+  "files.autoSave": "onFocusChange",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "workbench.colorTheme": "Nord",
+  "workbench.startupEditor": "none",
+  "git.autofetch": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.inlineSuggest.enabled": true,
+  "git.branchSortOrder": "alphabetically",
+  "git.enableCommitSigning": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.compactFolders": false
 }
