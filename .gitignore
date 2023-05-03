@@ -48,6 +48,8 @@
 
 !home/config/npm/npmrc
 
+!home/config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf
+
 !home/config/starship/starship.toml
 
 !home/config/wezterm/*.lua
