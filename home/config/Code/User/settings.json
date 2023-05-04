@@ -37,5 +37,8 @@
     "HTML (EEx)",
     "HTML (Eex)",
     "plist"
-  ]
+  ],
+  "files.exclude": {
+    "**/.git": false
+  }
 }
