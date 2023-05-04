@@ -85,6 +85,10 @@ const deploy = defineTask([
     destination: `${home}/.config/zsh`,
   }),
   link({
+    source: "./config/zsh/.zshenv",
+    destination: `${home}/.zshenv`,
+  }),
+  link({
     source: "./misc/fonts",
     destination: `${home}/.local/share/fonts`,
   }),
