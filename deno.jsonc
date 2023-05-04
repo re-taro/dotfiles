@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "deploy": "deno run --allow-read --allow-write --allow-env dotfiles.ts deploy run",
+    "deploy:stat": "deno run --allow-read --allow-env dotfiles.ts deploy"
+  }
+}

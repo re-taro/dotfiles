@@ -2,11 +2,15 @@
 !*/
 
 !.git/*
+!.vscode/settings.json
 !.gitignore
 !.gitmodules
 !.shellcheckrc
 !.stylua.toml
 !.tool-versions
+!deno.jsonc
+!deno.lock
+!dotfiles.ts
 
 !config/asdf/rc
 
