@@ -1,12 +1,16 @@
 [submodule "home/config/awesome/modules/bling"]
 	path = home/config/awesome/modules/bling
 	url = https://github.com/BlingCorp/bling.git
+	ignore = dirty
 [submodule "home/config/awesome/modules/color"]
 	path = home/config/awesome/modules/color
 	url = https://github.com/andOrlando/color.git
+	ignore = dirty
 [submodule "home/config/awesome/modules/layout-machi"]
 	path = home/config/awesome/modules/layout-machi
 	url = https://github.com/xinhaoyuan/layout-machi.git
+	ignore = dirty
 [submodule "home/config/awesome/modules/UPower"]
 	path = home/config/awesome/modules/UPower
 	url = https://github.com/Aire-One/awesome-battery_widget.git
+	ignore = dirty
