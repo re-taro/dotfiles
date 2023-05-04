@@ -9,4 +9,4 @@
 	url = https://github.com/xinhaoyuan/layout-machi.git
 [submodule "home/config/awesome/modules/UPower"]
 	path = home/config/awesome/modules/UPower
-	url = https://github.com/Aire-One/awesome-battery_widget
+	url = https://github.com/Aire-One/awesome-battery_widget.git
