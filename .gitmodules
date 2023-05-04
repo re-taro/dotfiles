@@ -2,7 +2,7 @@
 	path = config/awesome/modules/bling
 	url = https://github.com/BlingCorp/bling.git
 	ignore = dirty
-[submodule "home/config/awesome/modules/color"]
+[submodule "config/awesome/modules/color"]
 	path = config/awesome/modules/color
 	url = https://github.com/andOrlando/color.git
 	ignore = dirty
