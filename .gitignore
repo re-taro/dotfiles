@@ -8,63 +8,62 @@
 !.stylua.toml
 !.tool-versions
 
-!etc/systemd/system/battery_thresholds.service
+!config/asdf/rc
 
-!home/.asdfrc
-!home/.zshenv
-!home/.ssh/config
+!config/awesome/**/*.lua
+!config/awesome/**/*.svg
+!config/awesome/**/*.png
+!config/awesome/**/*.jpg
+!config/awesome/configuration/picom.conf
+!config/awesome/configuration/rofi.rasi
+!config/awesome/ui/panels/central-panel/quick-settings/airplane-mode/airplane_mode_status
+!config/awesome/ui/panels/central-panel/quick-settings/dnd/dnd_status
+!config/awesome/utilities/screensht
+!config/awesome/utilities/xcolor-pick
 
-!home/config/awesome/**/*.lua
-!home/config/awesome/**/*.svg
-!home/config/awesome/**/*.png
-!home/config/awesome/**/*.jpg
-!home/config/awesome/configuration/picom.conf
-!home/config/awesome/configuration/rofi.rasi
-!home/config/awesome/ui/panels/central-panel/quick-settings/airplane-mode/airplane_mode_status
-!home/config/awesome/ui/panels/central-panel/quick-settings/dnd/dnd_status
-!home/config/awesome/utilities/screensht
-!home/config/awesome/utilities/xcolor-pick
+!config/bat/config
 
-!home/config/bat/config
+!config/Code/User/settings.json
 
-!home/config/Code/User/settings.json
+!config/fcitx5/conf/*.conf
+!config/fcitx5/config
+!config/fcitx5/profile
 
-!home/config/fcitx5/conf/*.conf
-!home/config/fcitx5/config
-!home/config/fcitx5/profile
+!config/git/config
 
-!home/config/git/config
+!config/libskk/rules/StickyShift/keymap/hiragana.json
+!config/libskk/rules/StickyShift/keymap/katakana.json
+!config/libskk/rules/StickyShift/metadata.json
 
-!home/config/libskk/rules/StickyShift/keymap/hiragana.json
-!home/config/libskk/rules/StickyShift/keymap/katakana.json
-!home/config/libskk/rules/StickyShift/metadata.json
+!config/mpd/mpd.conf
 
-!home/config/mpd/mpd.conf
+!config/mpDris2/mpDris2.conf
 
-!home/config/mpDris2/mpDris2.conf
+!config/ncmpcpp/bindings
+!config/ncmpcpp/config
 
-!home/config/ncmpcpp/bindings
-!home/config/ncmpcpp/config
+!config/npm/npmrc
 
-!home/config/npm/npmrc
+!config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf
 
-!home/config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf
+!config/starship/starship.toml
 
-!home/config/starship/starship.toml
+!config/ssh/config
 
-!home/config/wezterm/*.lua
-!home/config/wezterm/color/nordfox.toml
+!config/wezterm/*.lua
+!config/wezterm/color/nordfox.toml
 
-!home/config/X11/xinitrc
-!home/config/X11/Xresource
+!config/X11/xinitrc
+!config/X11/Xresource
 
-!home/config/zsh/*.zsh
-!home/config/zsh/.zprofile
-!home/config/zsh/.zshrc
+!config/zsh/*.zsh
+!config/zsh/.zshenv
+!config/zsh/.zprofile
+!config/zsh/.zshrc
 
-!local/share/fonts/**/*.ttf
-!local/share/fonts/**/*.otf
-!local/share/fonts/**/LICENSE
-!local/share/fonts/**/*.txt
+!misc/fonts/**/*.ttf
+!misc/fonts/**/*.otf
+!misc/fonts/**/LICENSE
+!misc/fonts/**/*.txt
 
 !usr/sbin/battery_thresholds
