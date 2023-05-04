@@ -33,6 +33,10 @@ const deploy = defineTask([
     destination: `${home}/.config/git`,
   }),
   link({
+    source: "./config/lazygit/config.yml",
+    destination: `${home}/.config/lazygit/config.yml`,
+  }),
+  link({
     source: "./config/libskk",
     destination: `${home}/.config/libskk`,
   }),

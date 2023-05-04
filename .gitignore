@@ -35,6 +35,8 @@
 
 !config/git/config
 
+!config/lazygit/config.yml
+
 !config/libskk/rules/StickyShift/keymap/hiragana.json
 !config/libskk/rules/StickyShift/keymap/katakana.json
 !config/libskk/rules/StickyShift/metadata.json
