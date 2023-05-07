@@ -18,7 +18,7 @@ return {
         --- Default file manager
         file_manager = "nautilus",
         --- Default network manager
-        network_manager = "wezterm start iwctl",
+        network_manager = "iwgtk",
         --- Default bluetooth manager
         bluetooth_manager = "blueman-manager",
         --- Default power manager
