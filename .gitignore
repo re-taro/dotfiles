@@ -20,6 +20,10 @@
 !config/awesome/**/*.jpg
 !config/awesome/configuration/picom.conf
 !config/awesome/configuration/rofi.rasi
+!config/awesome/modules/awedock/rubato/images/*.gif
+!config/awesome/modules/awedock/rubato/LICENSE
+!config/awesome/modules/awedock/rubato/README.md
+!config/awesome/modules/awedock/rubato/rubato-1.1-1.rockspec
 !config/awesome/ui/panels/central-panel/quick-settings/airplane-mode/airplane_mode_status
 !config/awesome/ui/panels/central-panel/quick-settings/dnd/dnd_status
 !config/awesome/utilities/screensht
