@@ -18,7 +18,7 @@ return {
         --- Default file manager
         file_manager = "nautilus",
         --- Default network manager
-        network_manager = "iwgtk",
+        network_manager = "nm-applet",
         --- Default bluetooth manager
         bluetooth_manager = "blueman-manager",
         --- Default power manager
