@@ -71,6 +71,8 @@
 !config/zsh/.zprofile
 !config/zsh/.zshrc
 
+!config/libinput-gestures.conf
+
 !misc/fonts/**/*.ttf
 !misc/fonts/**/*.otf
 !misc/fonts/**/LICENSE

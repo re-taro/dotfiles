@@ -89,6 +89,10 @@ const deploy = defineTask([
     destination: `${home}/.zshenv`,
   }),
   link({
+    source: "./config/libinput-gestures.conf",
+    destination: `${home}/.config/libinput-gestures.conf`,
+  }),
+  link({
     source: "./misc/fonts",
     destination: `${home}/.local/share/fonts`,
   }),
