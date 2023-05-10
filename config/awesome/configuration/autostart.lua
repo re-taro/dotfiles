@@ -20,6 +20,7 @@ local function autostart_apps()
     helpers.run.run_once_grep("blueman-applet")
     helpers.run.run_once_grep("nm-applet")
     helpers.run.run_once_ps("fcitx5", "fcitx5 -d")
+    helpers.run.run_once_ps("libinput-gestures-setup", "libinput-gestures-setup start")
 end
 
 autostart_apps()
