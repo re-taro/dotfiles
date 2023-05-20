@@ -65,5 +65,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
-  "workbench.colorTheme": "Catppuccin Frappé"
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "diffEditor.ignoreTrimWhitespace": false
 }
