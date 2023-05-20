@@ -65,6 +65,10 @@ const deploy = defineTask([
     destination: `${home}/.config/npm`,
   }),
   link({
+    source: "./config/nvim",
+    destination: `${home}/.config/nvim`,
+  }),
+  link({
     source: "./config/pipewire",
     destination: `${home}/.config/pipewire`,
   }),
