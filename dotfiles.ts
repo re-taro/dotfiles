@@ -29,6 +29,10 @@ const deploy = defineTask([
     destination: `${home}/.config/fcitx5`,
   }),
   link({
+    source: "./config/gh/config.yml",
+    destination: `${home}/.config/gh/config.yml`,
+  }),
+  link({
     source: "./config/git",
     destination: `${home}/.config/git`,
   }),

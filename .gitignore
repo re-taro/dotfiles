@@ -37,6 +37,8 @@
 !config/fcitx5/config
 !config/fcitx5/profile
 
+!config/gh/config.yml
+
 !config/git/config
 
 !config/lazygit/config.yml
