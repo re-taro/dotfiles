@@ -61,7 +61,7 @@
 !config/ssh/config
 
 !config/wezterm/*.lua
-!config/wezterm/color/nordfox.toml
+!config/wezterm/color/catppuccin-frappe.toml
 
 !config/X11/xinitrc
 !config/X11/Xresource

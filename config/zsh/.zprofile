@@ -25,6 +25,7 @@ export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export GOPATH="$XDG_DATA_HOME/go"
 export FFMPEG_DATA_DIR="$XDG_DATA_HOME/ffmpeg"
