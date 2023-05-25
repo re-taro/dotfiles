@@ -89,6 +89,10 @@ const deploy = defineTask([
     destination: `${home}/.config/X11`,
   }),
   link({
+    source: "./config/xplr",
+    destination: `${home}/.config/xplr`,
+  }),
+  link({
     source: "./config/zsh",
     destination: `${home}/.config/zsh`,
   }),

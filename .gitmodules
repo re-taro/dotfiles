@@ -14,3 +14,9 @@
 	path = config/awesome/modules/UPower
 	url = https://github.com/Aire-One/awesome-battery_widget.git
 	ignore = dirty
+[submodule "config/xplr/wl-clipboard"]
+	path = config/xplr/wl-clipboard
+	url = https://github.com/sayanarijit/wl-clipboard.xplr.git
+[submodule "config/xplr/trash-cli"]
+	path = config/xplr/trash-cli
+	url = https://github.com/sayanarijit/trash-cli.xplr.git

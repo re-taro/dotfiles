@@ -16,7 +16,7 @@ return {
         --- Default web browser
         web_browser = "firefox-developer-edition",
         --- Default file manager
-        file_manager = "nautilus",
+        file_manager = "wezterm start xplr",
         --- Default network manager
         network_manager = "nm-applet",
         --- Default bluetooth manager

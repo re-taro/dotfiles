@@ -71,6 +71,8 @@
 !config/X11/xinitrc
 !config/X11/Xresource
 
+!config/xplr/**/*.lua
+
 !config/zsh/*.zsh
 !config/zsh/.zshenv
 !config/zsh/.zprofile
