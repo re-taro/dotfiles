@@ -39,7 +39,6 @@ ruled.client.connect_signal("request::rules", function()
         rule_any = {
             class = {
                 "Spotify",
-                "Org.gnome.Nautilus",
                 "Peek",
             },
         },
