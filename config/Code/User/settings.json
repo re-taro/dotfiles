@@ -66,5 +66,6 @@
     "source.fixAll.stylelint": true
   },
   "workbench.colorTheme": "Catppuccin Frappé",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.referencesCodeLens.enabled": true
 }
