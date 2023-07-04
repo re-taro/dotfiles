@@ -65,11 +65,12 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
-  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.colorTheme": "Nord",
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.referencesCodeLens.enabled": true,
   "redhat.telemetry.enabled": true,
   "files.associations": {
     "Justfile": "makefile"
-  }
+  },
+  "editor.minimap.renderCharacters": false
 }
