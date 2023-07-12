@@ -3,7 +3,7 @@ import {
   home,
   link,
   printCheckResults,
-} from "https://deno.land/x/moira@0.1.0/mod.ts";
+} from "https://deno.land/x/moira@0.2.0/mod.ts";
 
 if (!home) throw new Error("$HOME is not set");
 
