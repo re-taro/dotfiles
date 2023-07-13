@@ -157,7 +157,7 @@ theme.music_accent = theme.lighter_black
 --- ░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░░▀░░▀▀▀
 
 --- Wallpapers
- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/noa.png")
+theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/noa.png")
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/schale.png")
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/blue-archive.jpg")
 
