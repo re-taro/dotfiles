@@ -7,7 +7,7 @@
   "editor.fontSize": 14,
   "workbench.startupEditor": "none",
   "git.autofetch": true,
-  "workbench.iconTheme": "catppuccin-frappe",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.inlineSuggest.enabled": true,
   "git.branchSortOrder": "alphabetically",
   "git.enableCommitSigning": true,
@@ -65,7 +65,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Everforest Dark",
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.referencesCodeLens.enabled": true,
   "redhat.telemetry.enabled": true,
@@ -75,5 +75,10 @@
   "editor.minimap.renderCharacters": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  }
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "diffEditor.renderSideBySide": false,
+  "githubPullRequests.pullBranch": "never"
 }
