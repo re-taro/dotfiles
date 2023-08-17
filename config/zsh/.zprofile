@@ -38,6 +38,7 @@ export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 export GOBIN="$XDG_BIN_HOME"
 
 export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=0" +"set showtabline=0" +"set nonumber"'
+export ASDF_GOLANG_MOD_VERSION_ENABLED=false
 
 if [ $(echo $MANPAGER | awk '{print $1}') = nvim ]; then
   export LESS="--RAW-CONTROL-CHARS"
