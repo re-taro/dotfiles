@@ -58,6 +58,7 @@
 
 !config/nvim/**/*.json
 !config/nvim/**/*.lua
+!config/nvim/**/*.nix
 
 !config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf
 

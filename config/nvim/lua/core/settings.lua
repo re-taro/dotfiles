@@ -2,7 +2,7 @@ local settings = {}
 
 -- Set it to false if you want to use https to update plugins and treesitter parsers.
 ---@type boolean
-settings["use_ssh"] = false
+settings["use_ssh"] = true
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
@@ -11,6 +11,10 @@ settings["format_on_save"] = true
 -- Set it to false if the notification after formatting is annoying.
 ---@type boolean
 settings["format_notify"] = true
+
+-- Set it to false if you don't use copilot
+---@type boolean
+settings["use_copilot"] = true
 
 -- Set it to false if diagnostics virtual text is annoying.
 -- If disabled, you may browse lsp diagnostics using trouble.nvim (press `gt` to toggle it).
@@ -32,6 +36,11 @@ settings["format_disabled_dirs"] = {
     "~/format_disabled_dir",
 }
 
+-- Set the plugins to disable here.
+-- Example: "Some-User/A-Repo"
+---@type string[]
+settings["disabled_plugins"] = {}
+
 -- Set it to false if you don't use nvim to open big files.
 ---@type boolean
 settings["load_big_files_faster"] = true
@@ -40,7 +49,7 @@ settings["load_big_files_faster"] = true
 -- Settings will complete their replacement at initialization.
 -- Parameters will be automatically completed as you type.
 -- Example: { sky = "#04A5E5" }
----@type palette
+---@type palette[]
 settings["palette_overwrite"] = {}
 
 -- Set the colorscheme to use here.
@@ -114,4 +123,4 @@ settings["dap_deps"] = {
     "python", -- Python (debugpy)
 }
 
-return settings
+return require("modules.utils").extend_config(settings, "user.settings")
