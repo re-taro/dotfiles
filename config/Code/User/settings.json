@@ -2,7 +2,6 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'monospace', monospace",
-  "files.autoSave": "onFocusChange",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "workbench.startupEditor": "none",
@@ -12,7 +11,6 @@
   "git.branchSortOrder": "alphabetically",
   "git.enableCommitSigning": true,
   "editor.tabSize": 2,
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -46,7 +44,6 @@
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
   "discord.removeRemoteRepository": true,
-  "discord.removeDetails": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -65,7 +62,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
-  "workbench.colorTheme": "Everforest Dark",
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.referencesCodeLens.enabled": true,
   "redhat.telemetry.enabled": true,
@@ -80,5 +76,18 @@
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "diffEditor.renderSideBySide": false,
-  "githubPullRequests.pullBranch": "never"
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "workbench.colorTheme": "Everforest Dark",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
