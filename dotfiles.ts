@@ -9,10 +9,6 @@ if (!home) throw new Error("$HOME is not set");
 
 const deploy = defineTask([
   link({
-    source: "./config/asdf/rc",
-    destination: `${home}/.asdfrc`,
-  }),
-  link({
     source: "./config/awesome",
     destination: `${home}/.config/awesome`,
   }),

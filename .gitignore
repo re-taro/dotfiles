@@ -12,8 +12,6 @@
 !deno.lock
 !dotfiles.ts
 
-!config/asdf/rc
-
 !config/awesome/**/*.lua
 !config/awesome/**/*.svg
 !config/awesome/**/*.png
