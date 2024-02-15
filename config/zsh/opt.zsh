@@ -35,7 +35,7 @@ ZSH_HIGHLIGHT_MAXLENGTH=512
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=$color8,bold"
 
 while read -r opt
-do 
+do
   setopt $opt
 done <<-EOF
 AUTOCD
@@ -63,7 +63,7 @@ HIST_REDUCE_BLANKS
 EOF
 
 while read -r opt
-do 
+do
   unsetopt $opt
 done <<-EOF
 FLOWCONTROL
@@ -74,7 +74,7 @@ EOF
 
 command -v zoxide &>/dev/null && eval "$(zoxide init --cmd j zsh)"
 
-source ~/.local/share/asdf/asdf.sh
+eval "$(~/.local/bin/mise activate zsh)"
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
 bindkey -e

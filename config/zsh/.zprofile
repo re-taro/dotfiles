@@ -58,10 +58,12 @@ path=(
   $CARGO_HOME/bin(N-/)
   $GOBIN(N-/)
   $HOME/.deno/bin(N-/)
+  $HOME/.ghcup/bin(N-/)
+  $HOME/.cabal/bin(N-/)
+  $XDG_DATA_HOME/mise/shims(N-/)
   $path
 )
 
 fpath=(
-  $XDG_DATA_HOME/asdf/completions(N-/)
   $fpath
 )
