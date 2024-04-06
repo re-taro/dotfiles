@@ -39,5 +39,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 starship init fish | source
 mise activate fish | source
 ghr shell fish | source
+fzf --fish | source
 
 gpg-connect-agent /bye
