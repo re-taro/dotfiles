@@ -1,0 +1,10 @@
+[profiles.default]
+user.name = "Rintaro Itokawa"
+user.email = "me@re-taro.dev"
+
+[[rules]]
+profile.name = "default"
+
+[applications.vscode]
+cmd = "code"
+args = ["%p"]
