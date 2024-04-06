@@ -1,0 +1,36 @@
+[core]
+    pager = delta -s
+[user]
+    name = Rintaro Itokawa
+    email = me@re-taro.dev
+    signingkey = 2D948E50C12E6866
+[commit]
+    gpgsign = true
+[merge]
+    conflictstyle = diff3
+[pull]
+    rebase = true
+    ff = only
+[diff]
+    algorithm = histogram
+    colorMoved = zebra
+[gpg]
+    program = gpg
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    syntax-theme = Nord
+    line-numbers = true
+    navigate = true
+    features = zebra-dark
+[init]
+    defaultBranch = main
+[push]
+    autoSetupRemote = true
+[tag]
+    gpgSign = true
+[alias]
+	a = add
+	s = status
+	l = log --oneline --graph --decorate
+	ls = log --show-signature

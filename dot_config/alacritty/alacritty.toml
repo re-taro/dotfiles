@@ -1,0 +1,23 @@
+import = [
+  "~/.config/alacritty/theme.toml"
+]
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 12.7
+
+[font.normal]
+family = "UDEV Gothic NF"
+
+[shell]
+program = "/opt/homebrew/bin/fish"
+args = ["-l", "-c", "zellij attach --index 0 --create"]
+
+[window]
+opacity = 0.9
+
+[window.padding]
+x = 25
+y = 25
