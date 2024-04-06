@@ -2,65 +2,59 @@
 
 re-taro's dotfiles.
 
-## Prerequisites
+## How to setup
 
-- Using chezmoi. Please install it in advance.
-- If you're using macOS, hit the following command.
+### 1. Install Command Line Tools
 
-```
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply re-taro
-```
-
-- Or using other OS, visit this site for more details: https://www.chezmoi.io/install/
-
-## Set up GitHub access
-
-Firstly, generate a new SSH key ([Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)):
-
-```
-ssh-keygen -t ed25519 -f ~/.ssh/<filename>
+```sh
+xcode-select --install
 ```
 
-Next, I should register the key to GitHub and my machine ([Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)):
+### 2. Install Homebrew
 
-Copy the pub key for pasting GitHub page:
-
-```
-pbcopy < ~/.ssh/<filename>.pub
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-And add the key to my machine
+### 3. Install chezmoi
 
-```
-ssh-add ~/.ssh/<filename>
-ssh-add -l
-<show the list>
+```sh
+brew install chezmoi
 ```
 
-Finally, check if it works:
+### 4. Initialize chezmoi
 
-```
-ssh -T git@github.com
-```
-
-## Spinning up my environment
-
-First `chezmoi init`.
-
-```
+```sh
+# HTTPS
+chezmoi init https://github.com/re-taro/dotfiles.git
+# SSH
 chezmoi init git@github.com:re-taro/dotfiles.git
 ```
 
-Apply my settings.
+### 5. Apply the dotfiles.
 
-```
+```sh
 chezmoi apply
 ```
 
-## Install apps via homebrew
+## Edit dotfiles
 
-I'm using `Brewfile` to manage what apps will be installed. Run the following command:
+Editing files in dotfiles is done via chezmoi. Direct editing is not recommended.
 
+```sh
+chezmoi edit <file_path>
 ```
-brew bundle
+
+**Don't forget to apply the edits.**
+
+```sh
+chezmoi apply
 ```
+
+## Note: For secure files managed by Bitwarden
+
+The following files are located in Bitwarden's Vault. 
+
+- SSH Config (`~/.ssh/config`)
+
+You must be logged into Bitwarden and Bitwarden CLI to access these file entities. After logging in, run `chezmoi apply`.
