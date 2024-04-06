@@ -34,6 +34,7 @@ set -x GPG_TTY "$(tty)"
 set -x DENO_INSTALL "$HOME/.deno"
 set -x GHR_ROOT "$HOME/projects"
 set -x STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
+set -U fish_user_paths $fish_user_paths $HOME/.cargo/bin
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 starship init fish | source
