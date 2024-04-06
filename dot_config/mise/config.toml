@@ -1,0 +1,13 @@
+[tools]
+# Programming Languages
+python = "3.12"
+go = "1.22"
+
+# Runtimes
+node = "latest"
+bun = "latest"
+deno = "latest"
+
+[settings]
+legacy_version_file_disable_tools = ["terraform"]
+experimental = true
