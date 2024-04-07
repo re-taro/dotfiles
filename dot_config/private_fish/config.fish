@@ -41,5 +41,6 @@ starship init fish | source
 mise activate fish | source
 ghr shell fish | source
 fzf --fish | source
+zoxide init fish | source
 
 gpg-connect-agent /bye

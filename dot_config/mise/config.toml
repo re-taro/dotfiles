@@ -8,6 +8,9 @@ node = "latest"
 bun = "latest"
 deno = "latest"
 
+# Tools
+"npm:yarn" = "latest"
+
 [settings]
 legacy_version_file_disable_tools = ["terraform"]
 experimental = true
