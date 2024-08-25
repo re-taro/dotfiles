@@ -51,8 +51,9 @@ editor["sindrets/diffview.nvim"] = {
 	config = require("editor.diffview"),
 }
 editor["echasnovski/mini.align"] = {
-	version = false,
-	config = require("editor.mini-align"),
+	lazy = true,
+	event = { "CursorHold", "CursorHoldI" },
+	config = require("editor.align"),
 }
 editor["smoka7/hop.nvim"] = {
 	lazy = true,
@@ -62,8 +63,13 @@ editor["smoka7/hop.nvim"] = {
 }
 editor["tzachar/local-highlight.nvim"] = {
 	lazy = true,
-	event = { "CursorHold", "CursorHoldI" },
+	event = { "BufReadPost", "BufAdd", "BufNewFile" },
 	config = require("editor.local-highlight"),
+}
+editor["brenoprata10/nvim-highlight-colors"] = {
+	lazy = true,
+	event = { "CursorHold", "CursorHoldI" },
+	config = require("editor.highlight-colors"),
 }
 editor["romainl/vim-cool"] = {
 	lazy = true,
@@ -72,20 +78,20 @@ editor["romainl/vim-cool"] = {
 editor["lambdalisue/suda.vim"] = {
 	lazy = true,
 	cmd = { "SudaRead", "SudaWrite" },
-	config = require("editor.suda"),
+	init = require("editor.suda"),
 }
 editor["tpope/vim-sleuth"] = {
 	lazy = true,
-	event = "BufReadPre",
+	event = { "BufNewFile", "BufReadPost", "BufFilePost" },
 }
 editor["nvim-pack/nvim-spectre"] = {
 	lazy = true,
-	cmd = { "Spectre" },
+	cmd = "Spectre",
 }
 editor["mrjones2014/smart-splits.nvim"] = {
 	lazy = true,
 	event = { "CursorHoldI", "CursorHold" },
-	config = require("editor.smart-splits"),
+	config = require("editor.splits"),
 }
 
 ----------------------------------------------------------------------
@@ -94,7 +100,7 @@ editor["mrjones2014/smart-splits.nvim"] = {
 editor["nvim-treesitter/nvim-treesitter"] = {
 	lazy = true,
 	build = function()
-		if #vim.api.nvim_list_uis() ~= 0 then
+		if vim.fn.has("gui_running") == 1 then
 			vim.api.nvim_command([[TSUpdate]])
 		end
 	end,
@@ -107,10 +113,6 @@ editor["nvim-treesitter/nvim-treesitter"] = {
 		{
 			"windwp/nvim-ts-autotag",
 			config = require("editor.autotag"),
-		},
-		{
-			"NvChad/nvim-colorizer.lua",
-			config = require("editor.colorizer"),
 		},
 		{
 			"hiphish/rainbow-delimiters.nvim",

@@ -38,7 +38,6 @@ ui["nvim-lualine/lualine.nvim"] = {
 }
 ui["zbirenbaum/neodim"] = {
 	lazy = true,
-	commit = "9477da0",
 	event = "LspAttach",
 	config = require("ui.neodim"),
 }
@@ -59,8 +58,9 @@ ui["folke/paint.nvim"] = {
 }
 ui["folke/todo-comments.nvim"] = {
 	lazy = true,
-	event = { "BufReadPost" },
-	opts = {},
+	event = { "CursorHold", "CursorHoldI" },
+	config = require("ui.todo"),
+	dependencies = { "nvim-lua/plenary.nvim" },
 }
 ui["dstein64/nvim-scrollview"] = {
 	lazy = true,
