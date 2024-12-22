@@ -10,7 +10,7 @@ size = 12.7
 [font.normal]
 family = "UDEV Gothic NF"
 
-[shell]
+[terminal.shell]
 program = "/opt/homebrew/bin/fish"
 args = ["-l", "-c", "zellij attach --index 0 --create"]
 
