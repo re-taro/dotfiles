@@ -1,20 +1,49 @@
 [core]
     editor = nvim
     pager = delta -s
+    fsmonitor = true
+    untrackedCache = true
 [user]
     name = Rintaro Itokawa
     email = me@re-taro.dev
     signingkey = 2D948E50C12E6866
 [commit]
     gpgsign = true
+    verbose = true
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 [pull]
     rebase = true
     ff = only
 [diff]
     algorithm = histogram
     colorMoved = zebra
+    mnemonicPrefix = true
+    renames = true
+[rerere]
+    enabled = true
+    autoupdate = true
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+[init]
+    defaultBranch = main
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[tag]
+    gpgSign = true
+    sort = version:refname
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
 [gpg]
     program = gpg
 [interactive]
@@ -24,12 +53,6 @@
     line-numbers = true
     navigate = true
     features = zebra-dark
-[init]
-    defaultBranch = main
-[push]
-    autoSetupRemote = true
-[tag]
-    gpgSign = true
 [alias]
 	a = add
 	s = status
