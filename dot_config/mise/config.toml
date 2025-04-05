@@ -10,6 +10,7 @@ deno = "latest"
 
 # Tools
 "npm:yarn" = "latest"
+"npm:pnpm" = "latest"
 
 [settings]
 legacy_version_file_disable_tools = ["terraform"]

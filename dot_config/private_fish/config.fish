@@ -44,4 +44,6 @@ fzf --fish | source
 zoxide init fish | source
 atuin init fish | source
 
+gpg-connect-agent killagent /bye
+gpg-connect-agent updatestartuptty /bye
 gpg-connect-agent /bye
