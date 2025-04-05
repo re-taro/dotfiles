@@ -47,3 +47,15 @@ atuin init fish | source
 gpg-connect-agent killagent /bye
 gpg-connect-agent updatestartuptty /bye
 gpg-connect-agent /bye
+
+set fish_greeting
+
+if status is-interactive
+
+    export ZELLIJ_CONFIG_DIR=$HOME/.config/zellij
+
+    # Check if our Terminal emulator is Ghostty
+    if [ "$TERM" = "xterm-ghostty" ]
+        eval (zellij setup --generate-auto-start fish | string collect)
+    end
+end
