@@ -1,0 +1,9 @@
+encryption = "age"
+
+[age]
+    identity = "~/.config/chezmoi/key.txt"
+    recipient = "age1cu36p6a3t0sg8pvn5wvs9f4gxl0zfs8xjqwly4vykwlpc236jcfs9sm0gv"
+
+[hooks.read-source-state.pre]
+    command = "/usr/bin/env"
+    args = ["-S","bash", "-euo", "pipefail", {{ joinPath .chezmoi.sourceDir ".chezmoiscripts/.init.sh" | toToml }}]

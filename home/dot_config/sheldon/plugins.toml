@@ -1,0 +1,189 @@
+# `sheldon` configuration file
+# ----------------------------
+#
+# You can modify this file directly or you can use one of the following
+# `sheldon` commands which are provided to assist in editing the config file:
+#
+# - `sheldon add` to add a new plugin to the config file
+# - `sheldon edit` to open up the config file in the default editor
+# - `sheldon remove` to remove a plugin from the config file
+#
+# See the documentation for more https://github.com/rossmacarthur/sheldon#readme
+
+shell = "zsh"
+
+#
+# Sheldon Templates
+#
+
+[templates]
+defer = """
+{{ hooks?.pre | nl }}
+{% for file in files %}
+zsh-defer source "{{ file }}"
+{% endfor %}
+{{ hooks?.post | nl }}
+"""
+
+#
+# Deferred Loading of Plugins in Zsh
+#
+
+[plugins.zsh-defer]
+github = 'romkatv/zsh-defer'
+apply = ['source']
+
+#
+# Autoloading of Functions in Zsh
+#
+
+[plugins.compinit]
+inline = 'autoload -Uz compinit && zsh-defer compinit'
+
+#
+# Zsh-related Plugins
+#
+
+[plugins.zsh-autosuggestions]
+github = 'zsh-users/zsh-autosuggestions'
+apply = ['defer']
+
+[plugins.zsh-completions]
+github = 'zsh-users/zsh-completions'
+apply = ['defer']
+
+[plugins.zsh-syntax-highlighting]
+github = 'zsh-users/zsh-syntax-highlighting'
+apply = ['defer']
+
+[plugins.zsh-autopair]
+github = 'hlissner/zsh-autopair'
+apply = ['defer']
+
+[plugins.zsh-history-shell-options]
+inline = '''
+setopt INC_APPEND_HISTORY_TIME
+setopt INC_APPEND_HISTORY
+'''
+
+#
+# Mise for managing multiple versions of tools
+#
+
+[plugins.mise]
+inline = 'eval "$(~/.local/bin/mise activate zsh)"'
+
+#
+# Prompt theming
+#
+
+[plugins.starship]
+inline = 'eval "$(starship init zsh)"'
+
+#
+# autin for managing history across multiple shells
+#
+
+[plugins.autin]
+inline = 'eval "$(atuin init zsh)"'
+
+#
+# Language-related plugins
+#
+
+[plugins.lang]
+inline = '''
+function _lang() {
+    export LANG='en_US.UTF-8'
+}
+zsh-defer _lang
+'''
+
+[plugins.go]
+inline = '''
+function _go() {
+    export GOPATH="${HOME}/ghq"
+    export GOROOT=$(go env GOROOT)
+
+    typeset -gU path
+    path=(
+        $path
+        ${GOPATH}/bin(N-/)
+        ${HOME}/.go/bin(N-/)
+    )
+}
+zsh-defer _go
+'''
+
+[plugins.rust]
+inline = '''
+function _rust() {
+    typeset -gU path
+    path=(
+        $path
+        ${HOME}/.cargo/bin(N-/)
+    )
+}
+zsh-defer _rust
+'''
+
+[plugins.gpg]
+inline = '''
+export GPG_TTY=$(tty)
+'''
+
+[plugins.editor]
+inline = '''
+export EDITOR='hx'
+'''
+
+#
+# macOS specific plugins
+#
+
+[plugins.homebrew]
+inline = '''
+function _homebrew() {
+    # Homebrew will not auto-update before running `brew install`
+    export HOMEBREW_NO_AUTO_UPDATE=1
+
+    # Disable installing certain formulae
+    export HOMEBREW_FORBIDDEN_FORMULAE="node python python3 pip npm pnpm yarn claude"
+}
+zsh-defer _homebrew
+'''
+
+[plugins.macos-path]
+inline = '''
+function _macos_path() {
+    typeset -gU path
+    path=(
+        $path
+        /opt/{homebrew,local}/{,s}bin(N-/)
+    )
+}
+zsh-defer _macos_path
+'''
+
+[plugins.macos-browser]
+inline = '''
+function _macos_browser() {
+    if [[ -z "$BROWSER" && "$OSTYPE" == darwin* ]]; then
+        export BROWSER='open'
+    fi
+}
+zsh-defer _macos_browser
+'''
+
+#
+# Google Cloud SDK
+#
+
+[plugins.gcloud-sdk]
+inline = '''
+function _gcloud_sdk() {
+  if [[ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+  if [[ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+}
+zsh-defer _gcloud_sdk
+'''

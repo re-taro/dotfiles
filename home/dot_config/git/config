@@ -1,0 +1,60 @@
+[core]
+    editor = hx
+    fsmonitor = true
+    untrackedCache = true
+[user]
+    name = Rintaro Itokawa
+    email = me@re-taro.dev
+    signingkey = 2D948E50C12E6866
+[commit]
+    gpgsign = true
+    verbose = true
+[merge]
+    conflictstyle = zdiff3
+[pull]
+    rebase = true
+    ff = only
+[rerere]
+    enabled = true
+    autoupdate = true
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+[init]
+    defaultBranch = main
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[tag]
+    gpgSign = true
+    sort = version:refname
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[gpg]
+    program = gpg
+[diff]
+    algorithm = histogram
+    colorMoved = zebra
+    mnemonicPrefix = true
+    renames = true
+    tool = difftastic
+    external = difft
+[difftool]
+    prompt = false
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+    difftool = true
+[ghq]
+    root = ~/projects
+[alias]
+	l = log --oneline --graph --decorate
+	ls = log --show-signature

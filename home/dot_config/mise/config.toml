@@ -1,0 +1,31 @@
+[tools]
+age = "latest"
+atuin = "latest"
+bat = "latest"
+bitwarden = "latest"
+chezmoi = "latest"
+claude = "latest"
+difftastic = "latest"
+fzf = "latest"
+ghq = "latest"
+github-cli = "latest"
+go = "latest"
+helix = "latest"
+hyperfine = "latest"
+just = "latest"
+lazygit = "latest"
+node = "latest"
+pinact = "latest"
+pnpm = "latest"
+starship = "latest"
+uv = "latest"
+xcodes = "latest"
+zellij = "latest"
+
+"github:rossmacarthur/sheldon" = "latest"
+"npm:typescript-language-server" = "latest"
+
+[settings]
+activate_aggressive = true
+default_config_filename = ".mise.toml"
+experimental = true
