@@ -19,7 +19,7 @@ xcode-select --install
 ### 3. Install chezmoi
 
 ```sh
-brew install chezmoi bitwarden-cli
+brew install chezmoi
 ```
 
 ### 4. Initialize chezmoi
@@ -31,13 +31,7 @@ chezmoi init https://github.com/re-taro/dotfiles.git
 chezmoi init git@github.com:re-taro/dotfiles.git
 ```
 
-### 5. Login to Bitwarden
-
-```sh
-bw login
-```
-
-### 6. Apply the dotfiles.
+### 5. Apply the dotfiles.
 
 ```sh
 chezmoi apply
@@ -56,12 +50,3 @@ chezmoi edit <file_path>
 ```sh
 chezmoi apply
 ```
-
-## Note: For secure files managed by Bitwarden
-
-The following files are located in Bitwarden's Vault.
-
-- SSH Config (`~/.ssh/config`)
-- SSH Autholized keys (`~/.ssh/authorized_keys`)
-
-You must be logged into Bitwarden and Bitwarden CLI to access these file entities. After logging in, run `chezmoi apply`.

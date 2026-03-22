@@ -1,0 +1,25 @@
+{
+  "autosave": "on_focus_change",
+  "buffer_font_family": "UDEV Gothic NF",
+  "buffer_font_size": 12,
+  "disable_ai": true,
+  "icon_theme": "Catppuccin Mocha",
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "tab_size": 2,
+  "terminal": {
+    "copy_on_select": true
+  },
+  "theme": "Everforest Theme (blur)",
+  "ui_font_family": "UDEV Gothic NF",
+  "ui_font_size": 12
+}
