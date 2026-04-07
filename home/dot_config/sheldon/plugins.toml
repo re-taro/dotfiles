@@ -88,6 +88,12 @@ inline = 'eval "$(starship init zsh)"'
 inline = 'eval "$(atuin init zsh)"'
 
 #
+# zellij for terminal workspace with batteries included
+#
+[plugins.zellij]
+inline = 'eval "$(zellij setup --generate-auto-start zsh)"'
+
+#
 # Language-related plugins
 #
 

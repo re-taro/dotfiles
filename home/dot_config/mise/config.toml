@@ -23,6 +23,7 @@ uv = "latest"
 xcodes = "latest"
 zellij = "latest"
 
+"cargo:worktrunk" = "latest"
 "github:rossmacarthur/sheldon" = "latest"
 "npm:typescript-language-server" = "latest"
 
