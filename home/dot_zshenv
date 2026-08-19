@@ -2,3 +2,6 @@ XDG_CONFIG_HOME="$HOME/.config"
 XDG_CACHE_HOME="$HOME/.cache"
 XDG_DATA_HOME="$HOME/.local/share"
 XDG_STATE_HOME="$HOME/.local/state"
+
+# mise reads this before any config file loads, so it cannot live in config.toml
+export MISE_DEFAULT_CONFIG_FILENAME=".mise.toml"

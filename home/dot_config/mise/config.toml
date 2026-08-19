@@ -6,11 +6,13 @@ bitwarden = "latest"
 claude = "latest"
 codex = "latest"
 difftastic = "latest"
+direnv = "latest"
 fzf = "latest"
 ghq = "latest"
 github-cli = "latest"
-go = "latest"
+go = "1.25.5"
 helix = "latest"
+herdr = "latest"
 hyperfine = "latest"
 just = "latest"
 lazygit = "latest"
@@ -29,5 +31,4 @@ zellij = "latest"
 
 [settings]
 activate_aggressive = true
-default_config_filename = ".mise.toml"
 experimental = true
