@@ -88,10 +88,16 @@ inline = 'eval "$(starship init zsh)"'
 inline = 'eval "$(atuin init zsh)"'
 
 #
-# zellij for terminal workspace with batteries included
+# herdr for terminal workspace with agent awareness
+# HERDR_ENV is set inside herdr-managed panes: https://herdr.dev/docs/cli-reference/
 #
-[plugins.zellij]
-inline = 'eval "$(zellij setup --generate-auto-start zsh)"'
+[plugins.herdr]
+inline = '''
+if [[ -o interactive && -t 1 && -z "$HERDR_ENV" && -z "$ZELLIJ" && -z "$TMUX" && "$TERM" != 'dumb' ]] \
+    && command -v herdr >/dev/null 2>&1; then
+    exec herdr
+fi
+'''
 
 #
 # Language-related plugins

@@ -10,6 +10,7 @@ path=(
     ${HOME}/.local/bin(N-/)
 )
 fpath=(
+    ${HOME}/.zfunc(N-/)
     $fpath
 )
 
@@ -17,3 +18,5 @@ fpath=(
 # sheldon initialization
 #
 eval "$(sheldon source)"
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
