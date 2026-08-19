@@ -1,3 +1,5 @@
 eval "$(~/.local/bin/mise activate zsh --shims)"
 
-SSH_AUTH_SOCK="$(/opt/homebrew/bin/gpgconf --list-dirs agent-ssh-socket)"
+export SSH_AUTH_SOCK="$(/opt/homebrew/bin/gpgconf --list-dirs agent-ssh-socket)"
+/opt/homebrew/bin/gpgconf --launch gpg-agent
+export HOMEBREW_NO_AUTO_UPDATE=1

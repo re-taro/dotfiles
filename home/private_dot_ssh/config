@@ -1,2 +1,4 @@
+Match host github.com exec "/opt/homebrew/bin/gpgconf --launch gpg-agent"
+
 Host github.com
     IdentityFile cardno:22_315_794
